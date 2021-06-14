@@ -1,0 +1,308 @@
+* {
+    width: 100%;
+    margin: 0;
+}
+
+.App {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    color: #4c4c4c;
+    background-color: #f3f3f3;
+}
+
+.logo {
+    padding-left: 180px;
+    font-size: 30px;
+    align-self: center;
+}
+
+.headerRight {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 20px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #4c4c4c
+}
+
+.main {
+    display: grid;
+    width: 100%;
+
+}
+
+.pic {
+    background-image: url('https://p0.pikist.com/photos/446/369/clouds-cloudy-sky-horizon-atmosphere-white-clouds-grey-clouds-cloudy-sun-rays.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 650px;
+    display: grid;
+    grid-row-gap: 0px;
+    grid-template-areas: 'title' 'text' 'icon';
+    align-items: center;
+    justify-items: center;
+
+}
+
+.picTitle {
+    grid-area: title;
+    text-align: center;
+    font-size: 50px;
+    height: 140px;
+    padding-top: 70px;
+}
+
+.picText {
+    grid-area: text;
+    font-size: 30px;
+    text-align: center;
+    height: 80px;
+    padding-bottom: 50px;
+}
+
+.icon {
+    grid-area: icon;
+    color: white;
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+.icon:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.featuredWork {
+    width: 100%;
+ }
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    border-bottom: 3px solid black;
+    width: 289px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 41%;
+}
+
+.featuredText {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.gallery {
+    display: grid;
+    width:70%;
+    margin: 0 15%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 22vw);
+    grid-gap: 15px;
+    padding-bottom: 55px;
+}
+
+.galleryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team {
+    background-color: #f3f3f3;
+
+}
+
+.teamText {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.teamGallery {
+    display: grid;
+    width:60%;
+    margin: 0 20%;
+    grid-template-columns: repeat(4, 13vw);
+    grid-gap: 35px;
+    padding-bottom: 55px;
+
+}
+
+.teamBlock {
+    background-color: white;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.teamPic {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.fullName, .profession {
+    text-align: center;
+    padding: 7px 0;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    padding: 7px 0;
+    font-size: 25px;
+    width: 100px;
+    flex-direction: row;
+}
+
+.blocks {
+    display: flex;
+    padding: 30px 0;
+    width: 70%;
+    margin: 0 15%;
+
+}
+
+.leftBlock {
+    width: 70%
+}
+
+.map {
+    height: 300px;
+    width: 70%;
+    margin: 0 15%;
+
+}
+
+.text{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.bottomMessage {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.input1 {
+    height: 250px;
+    width: 90%;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.input1::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.input1::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.input1:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.input1:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.input1:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.input1:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.input1:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.input1:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.leaveEmail {
+    background-color: #f2f2f2;
+    font-size: 20px;
+    width: 57%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.leaveEmail::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.leaveEmail::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.leaveEmail:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.leaveEmail:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.leaveEmail:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.leaveEmail:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.leaveEmail:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.leaveEmail:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.sendMessage {
+    display: inline-block;
+    color: white;
+    background-color: #6995a9;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 1px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.sendMessage:hover { background: rgba(48, 84, 105); }
+.sendMessage:active { background: white; }
+
+
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #4f4f4f;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    align-items: center;
+}
+
+.address {
+    padding: 0 15%;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.iconCopy {
+   font-size: 20px;
+    width: 30px;
+}
